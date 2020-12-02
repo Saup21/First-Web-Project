@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My First Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav>
+      <ul class="topnav" id="drop_down_Click">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="topnav_right"><a href="#sign_up">Sign Up</a></li>
+        <li class="topnav_right"><a href="#sign_in">Sign In</a></li>
+        <li class="drop_down_Icon"><a href="javascript:void(0);" onclick="drop_down_Menu()">&#9776;</a></li>
+      </ul>
+    </nav>
+
+    <div class="container" id="section_1_gradient">
+      <div class="row">
+        <div class="col-6">
+          <div class="leftside_col">
+            <h1 class="larger">Crazy Radness</h1>
+            <h1 class="larger">Made For Devslopers</h1>
+          </div>
+          <form>
+            <div class="leftside_col">
+              <h2>Username</h2>
+              <input class="input_box" type="text" name="username" placeholder="Username">
+              <h2>Password</h2>
+              <input class="input_box" type="text" name="password" placeholder="Password">
+            </div>
+          </form>
+        </div>
+        <div class="col-6">
+          <div class="rightside_col">
+            <div class="video_container">
+              <iframe width="460" height="255" src="https://www.youtube.com/embed/Hyag7lR8CPA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <h1 class="section_2_header">The Standards Of Awesomeness</h1>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="box">
+            <div class="icon">
+              <img src="zebra.jpg" width="200px" alt="zebra">
+            </div>
+            <label>Chat With Me</label>
+            <p>Hi, this is Saup trying to build my first web page using HTML and CSS. Just messing around with these cool tags, classes and identities. Pretty cool i would say.Gonna Make a web page for our Training and Placment cell soon.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <div class="icon">
+              <img src="zebra.jpg" width="200px" alt="zebra">
+            </div>
+            <label>Learn To Code</label>
+            <p>Hi, this is Saup trying to build my first web page using HTML and CSS. Just messing around with these cool tags, classes and identities. Pretty cool i would say.Gonna Make a web page for our Training and Placment cell soon.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <div class="icon">
+              <img src="zebra.jpg" width="200px" alt="zebra">
+            </div>
+            <label>Build A Web Page</label>
+            <p>Hi, this is Saup trying to build my first web page using HTML and CSS. Just messing around with these cool tags, classes and identities. Pretty cool i would say.Gonna Make a web page for our Training and Placment cell soon.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button class="learn_more" type="button" name="button">Learn More</button>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-7">
+          <article>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </article>
+        </div>
+        <div class="col-5">
+          <div class="slope_icon">
+            <img src="zebra.jpg" width="400px" alt="zebra">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footsy">
+      <div class="row">
+        <div class="col-3 mobile_stack">
+          <h2>Company</h2>
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="col-3 mobile_stack">
+          <h2>Company</h2>
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="col-3 mobile_stack">
+          <h2>Company</h2>
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="col-3 mobile_stack">
+          <h2>Company</h2>
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function drop_down_Menu ()
+      {
+        var x= document.getElementById("drop_down_Click");
+        if(x.className === "topnav")
+        {
+          x.className += " responsive";
+        }
+        else
+        {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+  </body>
+</html>

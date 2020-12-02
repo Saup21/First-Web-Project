@@ -1,0 +1,277 @@
+/* ######### DEFAULT ########### */
+
+nav, header, footer {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+}
+
+label {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 17px;
+  line height: 1.2;
+}
+
+article p {
+  font-size: 18.5px;
+  padding: 14px;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 4% 0%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ######### NAV BAR ######## */
+
+nav{
+  width: 100%;
+  margin: 0;
+}
+
+nav ul {
+  background-color: #eee;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+ul.topnav li {
+  list-style: none;
+  float: left;
+}
+
+ul.topnav li.topnav_right {
+  float: right;
+}
+
+ul.topnav li a {
+  display: block;
+  text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+ul.topnav li a:hover {
+  background-color: #0000ff;
+  color: #fff;
+}
+
+ul.topnav li.drop_down_Icon {
+  display: none;
+}
+
+/* ######### CUSTOM STYLES ########## */
+
+#section_1_gradient {
+  background: #076DFF;
+  background: -moz-linear-gradient(#076DFF, #65a5ff);
+  background: -webkit-linear-gradient(#076DFF, #65a5ff);
+  background: -o-linear-gradient(#076DFF, #65a5ff);
+  background: linear-gradient(#076DFF, #65a5ff);
+}
+
+div.box {
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .15),
+  0 2px 3px 0 rgba(0, 0, 0, .1);
+  text-align: center;
+  margin: 10px;
+  padding: 15px 12px 8px 12px;
+  border-radius: 6px;
+}
+
+div.slope_icon img {
+  display: block;
+  margin: auto;
+  box-shadow: 2px/*H*/ -2px/*V*/ 5px/*B*/ 2px/*S*/ rgba(0/*Sh*/, 0/*BG*/, 0/*BX*/, .55/*O*/);
+
+}
+
+button {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #0069ff;
+  padding: 10px 28px;
+  text-align: center;
+  display: block;
+  margin: 5px;
+  border-radius: 6px;
+}
+
+button.learn_more {
+  display: block;
+  margin: auto;
+}
+
+div.icon {
+  width: 100%;
+}
+
+div.leftside_col {
+  margin-left: 25%;
+}
+
+div.rightside_col {
+  margin-left: 10%;
+}
+
+h1.larger {
+  color: #fff;
+  font-size: 46px;
+  margin: 0;
+  line-height: 60px;
+}
+
+.section_2_header {
+  font-size: 50px;
+  text-align: center;
+}
+
+form h2 {
+  color: #fff;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  width: 255px;
+  min-width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+footer.footsy {
+  background-color: #666;
+  padding-left: 10%;
+}
+
+footer.footsy h2 {
+  color: #fff;
+  font-size: 26.5px;
+}
+
+footer.footsy ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 0;
+}
+
+footer.footsy ul li {
+   color: #fff;
+   font-size: 18px;
+   line-height: 1.4;
+}
+
+/* ######### MOBILE ######### */
+
+@media screen and (max-width: 680px) {
+
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+
+  ul.topnav li.drop_down_Icon {
+    display: block;
+    float: right;
+  }
+
+  ul.topnav.responsive li.drop_down_Icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  ul.topnav.responsive {
+    position: relative;
+  }
+
+  ul.topnav.responsive li {
+    display: inline;
+    float: none;
+  }
+
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+  .section_2_header {
+    font-size: 38px;
+  }
+
+  div.slope_icon {
+    margin: 10px;
+  }
+
+  div.slope_icon img {
+    margin: auto;
+  }
+
+  .col-7, .col-5, .col-6, .col-4 {
+    width: 100%;
+    margin: 0;
+  }
+
+  div.mobile_stack {
+    width: 50%;
+    display: block;
+  }
+
+  div.box {
+    display: block;
+  }
+
+  div.leftside_col, div.rightside_col {
+    margin: 15px;
+  }
+
+  .video_container iframe {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+}
